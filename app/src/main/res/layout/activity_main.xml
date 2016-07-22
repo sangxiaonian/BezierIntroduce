@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bar="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="haipo.com.bezierintroduce.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+
+        bar:title="贝塞尔曲线演示">
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <RelativeLayout
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <haipo.com.bezierintroduce.BasicPathView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/basic"
+            android:background="#ffffff" />
+        <haipo.com.bezierintroduce.AdvancePathView
+            android:layout_width="match_parent"
+            android:id="@+id/advance"
+            android:visibility="gone"
+            android:layout_height="match_parent">
+
+        </haipo.com.bezierintroduce.AdvancePathView>
+        <haipo.com.bezierintroduce.HearView
+            android:layout_width="match_parent"
+            android:id="@+id/high"
+            android:background="#ffffff"
+            android:layout_height="match_parent">
+
+        </haipo.com.bezierintroduce.HearView>
+    </RelativeLayout>
+
+
+</LinearLayout>
